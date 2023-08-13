@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Add this line to the <head> section of your HTML to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-4oV6GmUd0b1E2wkg3j8pTpOT+UJHGNpG2+pXpA1lHA+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        /* Add your other CSS styles here */
+        .section {
+            padding: 60px 0;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .section-description {
+            font-size: 18px;
+            color: #888;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        .col-md-8,
+        .col-md-4 {
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .widget-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .address {
+            font-size: 18px;
+            color: #888;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .social-icons li {
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 2em;
+         }
+         .button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5em;
+         }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Feel free to get in touch with me</p>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="mailto:pratyushav007@gmail.com" method="post" id="contactForm" name="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" name="contactSubject">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea class="form-control" rows="6" id="contactMessage" name="contactMessage" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <aside class="col-md-4">
+                    <div class="widget widget_contact">
+                        <h4 class="widget-title">Contact</h4>
+                        <p class="address">
+                            Pratyusha V<br>
+                            Atlanta, GA 30324<br>
+                            +1 (404) 232 5237
+                        </p>
+                    </div>
+                    <div class="widget widget_social">
+                        <h4 class="widget-title">Connect</h4>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/pratyushareddy-v-21173422b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/pratyushareddyvasepalli30" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <div class="button-container" style="background-color: #fff;">
+        <a class="button" href="index.html">Home</a>
+        <a class="button" href="resume.html">Resume</a>
+        <a class="button" href="projects.html">Projects</a>
+        <a class="button" href="contact.html">Contact Me</a>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
